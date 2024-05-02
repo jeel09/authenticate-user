@@ -25,7 +25,7 @@ export default function LoginPage() {
             });
             console.log(response.data.token);
 
-            //set http only cookie from response.data.token
+            //set cookie from response.data.token
             document.cookie = cookie.serialize('token', response.data.token);
 
             console.log("login success", response.data);
